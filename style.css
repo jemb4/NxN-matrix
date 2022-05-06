@@ -1,0 +1,44 @@
+body{
+    background-color: antiquewhite;
+}
+
+h3{
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+td{
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    width: 30px;
+    height: 30px;
+}
+
+/* si td tiene clase */
+.diagonal{
+    background-color: black;
+}
+
+.container-1{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container-domain{
+    background-color: rgba(240, 248, 255, 0.493);
+    height: 400px;
+    outline: solid 1px brown;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    
+}
+
+.container-select{
+    background-color: rgba(240, 248, 255, 0.493);
+    outline: solid 1px brown;
+    width: 500px;
+}
