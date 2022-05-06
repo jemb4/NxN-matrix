@@ -1,9 +1,3 @@
-// let num = 15
-
-
-
-
-
 
 // función que genera una matrix n
 
@@ -53,7 +47,7 @@ function generateTable (n){
   
         return "No existen matrices con dimensión 0"
   
-      }else if(n > 80){                                         //comprueba que no se le da un valor muy grande
+      }else if(n > 65){                                         //comprueba que no se le da un valor muy grande
   
         return "La matriz es demasiado grande para mostrarse en pantalla"
   
@@ -77,27 +71,7 @@ function generateTable (n){
     return html
 }
 
-//hacer que me muestre mi función:
-
-
-//mostrar función en consola y en pantalla:
-
-// let btn = document.getElementById('btn-1');
-
-// btn.addEventListener("click", cons )
-
-// function cons (){
-
-//   console.log(generateMatrix(3))
-
-//   console.log(3)
-
-//   document.querySelector("#show-matrix").innerHTML = generateTable(3)
-// }
-
-
-
-// evento que toma el valor del input
+//hacer que se muestre todo lo realizado en la función:
 
 function showMatrix () {
 
@@ -110,4 +84,13 @@ function showMatrix () {
   console.log(generateMatrix(num));
 
 }
+
+//Hacer que funcione pulsando enter en el input
+
+let inputEnter = document.getElementById('input-matrix'); //convertimos el id en una variable solo por "estetica"
+inputEnter.addEventListener('keyup', function onEvent(e) { //"escucha" cuando pulsamos un botón en el input y hace algo
+    if (e.keyCode === 13) {  // el número 13 hace referencia al botón enter
+        showMatrix()
+    }
+});
 

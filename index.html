@@ -15,21 +15,23 @@
 </head>
 <body>
 
-    <div class="container-fluid bg-secondary">
+    <div class="container-fluid bg-secondary container align-bottom">
 
-        <div class="container-fluid container1">
-            <h1 id="show-matrix"></h1>
+        <div class="container-fluid container1 d-flex justify-content-center">
+            <h1 id="show-matrix" class="mt-5"></h1>
         </div>
 
-        <div class="col-1">
-            <div class="input-group input-group-sm mb-3">
-                <input type="text" class="form-control" placeholder="insertar tamaño" id="input-matrix">
+        <div class="d-flex justify-content-center py-3">
+            <div class="col-2 mx-3">
+                <div class="input-group input-group-sm mb-3">
+                    <input type="text" class="form-control" placeholder="insertar tamaño" id="input-matrix">
+                </div>
+            </div>
+            
+            <div class="col-2">
+                <button type="button" class="btn btn-primary" onclick="showMatrix()">Matrix</button>
             </div>
         </div>
-        
-        <div class="col-2">
-            <button type="button" class="btn btn-primary" onclick="showMatrix()">Matrix</button>
-      </div>
 
     </div>
     
